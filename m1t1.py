@@ -11,11 +11,11 @@ def printMenu():
     
     
     if option == 'A':
-        intOne = int(input('Please enter first number '))
-        intTwo = int(input('Please enter second number '))
+        intOne = int(input('FIRST NUMBER? '))
+        intTwo = int(input('SECOND NUMBER? '))
         sumOne = int(intOne) + int(intTwo)
         print('SUM: ' , sumOne)
-        again = input('AGAIN?' + ('' * 20) + '(Y/N)')
+        again = input('AGAIN?' + '(Y/N)')
         if again == 'Y':
             printMenu()
         else:
