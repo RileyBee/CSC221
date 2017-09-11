@@ -24,13 +24,18 @@ def printMenu():
             exit()
             
     elif option == 'B':
-        print('COMING SOON!')
-        again = input('AGAIN?' + '(Y/N)')
-        if again == 'Y':
-            printMenu()
-        else:
-            exit()
-
+        while True:
+            number = int(input('NEXT NUMBER?'))
+            if number == "TEN":
+                number = 10
+            elif number == "END":
+                print("SUM: ", number)          
+                again = input('AGAIN?' + '(Y/N)')
+                if again == 'Y':
+                    printMenu()
+                else:
+                    exit()
+                    
     elif option == 'C':
         print('THIS FEATURE IS AVAILABLE TO PREORDER CUSTOMERS ONLY')
         printMenu()
