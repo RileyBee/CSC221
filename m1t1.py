@@ -1,3 +1,17 @@
+'''
+* 09/10/2017
+*
+* CSC 221
+*
+* Chris Noyes
+*
+* The Addinator allows the user to navigate the menu and choose games options A, B, or C.
+* Option A allows the user to enter two ints and returns the sum.
+* Option B is a work in progress and allows the user to enter ints until END is typed,
+* and then returns thie sum.
+* Option C is for Preorder customers only.
+'''
+
 def main():
     printMenu()
 
