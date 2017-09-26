@@ -16,14 +16,13 @@ def main():
     
 def guessingGame():
     rand = random.randint(1,100)
-    guess = int(input("pick a number between 1 and 101: "))
+    guess = 0
     while guess != rand:
+        guess = int(input("pick a number between 1 and 100: "))
         if guess < rand:
             print("too low")
-            guess = int(input("pick a number between 1 and 100: "))
         elif guess > rand:
-            print("too high")
-            guess = int(input("pick a number between 1 and 100: "))
+            print("too high")            
         else:
             print("That's correct, great job!")
             
