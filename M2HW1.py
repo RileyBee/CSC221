@@ -5,16 +5,26 @@
 *
 * Chris Noyes
 *
+* Option A:
 * Accepts string from user and returns any vowels found.
+*
+* Option B:
+* Displays list of directions forward and in reverse.
+*
+* Option C:
+* 
 '''
 
 def main():
+    print('*' * 31)
     print('Select a program to run:')
     print ('A: Vowel Finder')
     print ('B: Driving Directions')
     print ('C: Customer Service Simulator')
+    print('*' * 31)
 
-    option = input('Enter Choice: ') 
+    option = input('Enter Choice: ')
+    print('*' * 31)
     
     if option == 'A':
         vowelFinder()
@@ -30,15 +40,21 @@ def main():
         
     
 def vowelFinder():
+    
     phrase = input("Please enter phrase: ")
+     
     vowels = ['a', 'e', 'i', 'o', 'u']
     tmp = []
     
     for chars in phrase:
         if chars in vowels:
             tmp.append(chars)
+            
+    print('*' * 31)
+    print('The following vowels were found: ')
+    print(tmp)
+    print('*' * 31)
     
-    print('The following vowels were found', tmp)
     
     
     
@@ -48,13 +64,21 @@ def drivingDirections():
                   'Turn right onto Green St',
                   'Turn left onto Barrington Cross St',
                   'Turn right onto Hull Rd']
-        
-    
+    fwd = []
+
+    print('Directions to school.')
+    print('*' * 31)   
    
-#    for i in directions:
-#        print(i)
-    
     for i in directions:
+        print(i)
+        fwd.append(i)
+
+   
+    print('*' * 31)
+    print('Now let\'s see that in reverse!')
+    print('*' * 31)
+    
+    while len(directions) > 0:
         print(directions.pop())
         
         
@@ -67,18 +91,5 @@ def drivingDirections():
     
            
         
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
+                                                    
 main()
