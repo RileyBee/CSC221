@@ -33,7 +33,7 @@ def main():
         drivingDirections()
         
     elif option == 'C':
-        print('coming soon')
+        customers()
     else:
         print('Only A, B, or C are accepted inputs')
         main()
@@ -81,6 +81,22 @@ def drivingDirections():
     while len(directions) > 0:
         print(directions.pop())
         
+def customers():
+    
+    queue = ['Alice','Bob','Charles','Dennis','Elise','Fred','George']
+    minute = ['5','10','15','20','25','30']
+    
+    for i in minute:        
+        for j in queue:
+            print('Now serving: ',queue.pop,
+            
+
+
+
+    
+
+   
+                
         
     
     
